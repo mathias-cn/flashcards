@@ -18,7 +18,7 @@ export function App() {
         currentFlash === f.id ? (
           <Flashcard key={f.id} flashcardObj={f} clicked={true} />
         ) : (
-          <Flashcard key={f.id} flashcardObj={f} clicked={false} onClick={() => setCurrentFlash(f.id)}  />
+          <Flashcard key={f.id} flashcardObj={f} clicked={false} onClickFunction={() => setCurrentFlash(f.id)}  />
         )
       ))}
     </div>
